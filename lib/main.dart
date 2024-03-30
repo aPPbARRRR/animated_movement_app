@@ -51,7 +51,7 @@ class _MovingPlaceomeState extends State<MovingPlace> {
     final double unitW = screenW / 10;
     final double unitH = screenH / 10;
     return GestureDetector(
-      onTapUp: (details) {
+      onTapUp: (TapUpDetails details) {
         print(details.localPosition);
         testW = details.localPosition.dx - unitW / 2;
         testH = details.localPosition.dy - unitH / 2;
